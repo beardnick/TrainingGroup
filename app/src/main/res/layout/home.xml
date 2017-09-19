@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/cardsListStyle">
+
+        <LinearLayout
+            android:id="@+id/mainbutton"
+            style="@style/cardStyle"
+            android:gravity="center"
+         >
+
+         <TextView
+             android:id="@+id/tv_main_button"
+             style="@style/cardHeaderStyle"
+             android:text="mainbutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/teachershow"
+            style="@style/cardStyle"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_teachershow"
+                style="@style/cardHeaderStyle"
+                android:text="teachershow"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/cardStyle"
+                      android:id="@+id/bar">
+
+            <TextView
+                android:id="@+id/tv_bar"
+                style="@style/cardHeaderStyle"
+                android:text="bar"/>
+
+            <LinearLayout
+                android:id="@+id/llHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </FrameLayout>
