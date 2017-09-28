@@ -1,9 +1,12 @@
 package com.example.asus.traininggroup;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -25,11 +28,12 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
         bindView();
     }
 
+
     public void InitBmob(){
         //提供以下两种方式进行初始化操作：
 
         //第一：默认初始化
-        Bmob.initialize(this, "Your Application ID");
+        Bmob.initialize(this,"e0055c9f004f6b8d96b58b34b1229b55");
         // 注:自v3.5.2开始，数据sdk内部缝合了统计sdk，开发者无需额外集成，传渠道参数即可，不传默认没开启数据统计功能
         //Bmob.initialize(this, "Your Application ID","bmob");
 
