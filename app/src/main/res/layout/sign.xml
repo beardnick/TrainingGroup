@@ -1,0 +1,111 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+
+android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/text_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+    android:textSize="24sp"
+    android:textColor="#4f4f4f"
+    android:text="培训帮"/>
+
+<EditText
+
+    android:id="@+id/name_et"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:drawableLeft="@drawable/person"
+
+    android:layout_below="@+id/text_view"
+
+    android:hint="请输入您的手机号码/学员编号" >
+
+</EditText>
+
+
+
+<EditText
+
+    android:id="@+id/pass_et"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:layout_below="@+id/name_et"
+
+    android:layout_centerHorizontal="true"
+
+    android:layout_marginTop="30dp"
+
+    android:ems="10"
+
+    android:drawableLeft="@drawable/block"
+
+    android:hint="请输入密码"
+
+    android:inputType="textPassword" />
+
+
+
+<Button
+
+    android:id="@+id/sign"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:layout_below="@+id/pass_et"
+
+    android:layout_centerHorizontal="true"
+
+    android:layout_marginTop="40dp"
+
+    android:background="#ffd2d2"
+
+    android:onClick="fun"
+
+    android:text="登录" />
+
+    <TextView
+        android:id="@+id/fetchPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/set"
+        android:layout_marginLeft="45dip"
+        android:text="找回密码"
+        android:textSize="7pt"
+        android:textColor="#333355"
+        android:gravity="bottom"/>
+
+    <TextView
+        android:id="@+id/regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dip"
+        android:layout_marginTop="5dip"
+        android:text="注册账号"
+        android:textSize="7pt"
+        android:textColor="#333355"
+        android:gravity="bottom"/>
+
+
+
+
+</RelativeLayout>
